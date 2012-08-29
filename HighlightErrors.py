@@ -10,10 +10,12 @@ class HighlightErrors(sublime_plugin.TextCommand):
          return
 
       views = {}
-      viewRegions = {}
+      viewErrorRegions = {}
+      viewWarningRegions = {}
       for view in self.window.views():
          views[view.file_name()] = view
-         viewRegions[view.file_name()] = []
+         viewErrorRegions[view.file_name()] = []
+         viewWarningRegions[view.file_name()] = []
 
       for line in open("/home/jthorne/.lastBuildOutputNormalized"):
          match = re.match("^([-a-zA-Z0-9_/.]+[.](cxx|h))[:]([0-9]+)[:](.*)$", line)
@@ -22,14 +24,22 @@ class HighlightErrors(sublime_plugin.TextCommand):
             file, ext, line, message = match.groups()
             file = os.path.abspath(file)
 
+            if "no relevant classes found" in message.lower():
+               continue
+
             if not file in views:
                views[file] = self.window.open_file(file)
-               viewRegions[file] = []
+               viewErrorRegions[view.file_name()] = []
+               viewWarningRegions[view.file_name()] = []
 
-            viewRegions[file].append( views[file].line(views[file].text_point(int(line) - 1, 0)) )
+            if "error" in message.lower():
+               viewErrorRegions[file].append( views[file].line(views[file].text_point(int(line) - 1, 0)) )
+            else:
+               viewWarningRegions[file].append( views[file].line(views[file].text_point(int(line) - 1, 0)) )
 
       for file in views:
-         views[file].add_regions("key", viewRegions[file], "error", "bookmark", sublime.DRAW_OUTLINED);
+         views[file].add_regions("error", viewErrorRegions[file], "error", "bookmark", sublime.DRAW_OUTLINED);
+         views[file].add_regions("errorwarning", viewWarningRegions[file], "errorwarning", "bookmark", sublime.DRAW_OUTLINED);
 
 
 class HighlightUpdater(sublime_plugin.EventListener):
