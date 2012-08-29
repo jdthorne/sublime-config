@@ -3,6 +3,7 @@
    { "keys": ["ctrl+shift+/"], "command": "toggle_comment", "args": { "block": true } },
 	{ "keys": ["ctrl+shift+e"], "command": "expand" },
 	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+   { "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "replace"} },
 
    { "keys": ["ctrl+e"], "command": "highlight_errors" },
    { "keys": ["ctrl+shift+w"], "command": "close_all" },

@@ -21,3 +21,12 @@ class HighlightSelection(sublime_plugin.TextCommand):
          results += self.view.find_all(text, sublime.LITERAL)
 
       self.view.add_regions("highlights", results, "highlightedtext", "dot", sublime.DRAW_OUTLINED);
+
+class HighlightListener(sublime_plugin.EventListener):
+   def on_modified(self, view):
+      h = HighlightSelection(view)
+      h.run(None)
+
+   def on_activated(self, view):
+      h = HighlightSelection(view)
+      h.run(None)
