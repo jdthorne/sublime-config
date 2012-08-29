@@ -1,0 +1,38 @@
+[
+	{ "keys": ["ctrl+/"], "command": "comment" },
+   { "keys": ["ctrl+shift+/"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["ctrl+shift+e"], "command": "expand" },
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+
+   { "keys": ["ctrl+e"], "command": "highlight_errors" },
+   { "keys": ["ctrl+shift+w"], "command": "close_all" },
+
+   { "keys": ["alt+t"], "command": "toggle_test" },
+   { "keys": ["ctrl+h"], "command": "highlight_selection" },
+   { "keys": ["ctrl+shift+h"], "command": "highlight_selection", "args": {"clear": true} },
+
+   { "keys": ["ctrl+alt+left"], "command": "view_navigation", "args": { "direction": "back" } },
+   { "keys": ["ctrl+alt+right"], "command": "view_navigation", "args": { "direction": "forward" } },
+
+   {
+      "keys": ["ctrl+l"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 0.5, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+      }
+   },
+
+   {
+      "keys": ["ctrl+shift+l"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1]]
+      }
+   }
+]

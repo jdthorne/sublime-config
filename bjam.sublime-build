@@ -1,0 +1,3 @@
+{
+   "cmd": ["/usr/bin/tcsh", "-c", "source ~/.cshrc ; b"]
+}
