@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1346277414,
+	"auto_upgrade_last_run": 1346348163,
 	"installed_packages":
 	[
+		"Clipboard History",
 		"Package Control",
 		"SublimeClang",
 		"SublimeCodeIntel"
