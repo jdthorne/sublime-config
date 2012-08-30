@@ -35,5 +35,20 @@
          "rows": [0.0, 1.0],
          "cells": [[0, 0, 1, 1]]
       }
-   }
+   },
+
+  {
+    "command": "clang_goto_def",
+    "context": [{"key": "clang_supported_language"}],
+    "keys": ["alt+g"]
+  },
+  
+   { "keys": ["ctrl+c"], "command": "clipboard_copy",
+      "context": [{"key": "clipboardcopy_fake", "operator":"equal", "operand":true}]
+   },
+   { "keys": ["ctrl+x"], "command": "clipboard_copy",
+      "context": [{"key": "clipboardcopy_fake", "operator":"equal", "operand":true}]
+   },
+   { "keys": ["ctrl+shift+v"], "command": "clipboard_display" }
+
 ]
