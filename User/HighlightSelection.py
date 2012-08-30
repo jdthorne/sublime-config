@@ -3,18 +3,19 @@ import sublime, sublime_plugin
 highlights = []
 
 class HighlightSelection(sublime_plugin.TextCommand):
-   def run(self, edit, clear=False):
+   def run(self, edit, clear=False, add=True):
       global highlights
 
-      if clear:
-         highlights = []
-         self.view.add_regions("highlights", [], "highlightedtext")
-         return
+      if add:
+         if clear:
+            highlights = []
+            self.view.add_regions("highlights", [], "highlightedtext")
+            return
 
-      if len(self.view.sel()) > 0:
-         selection = self.view.substr(self.view.sel()[0])
-         if len(selection) > 0:
-            highlights.append(selection)
+         if len(self.view.sel()) > 0:
+            selection = self.view.substr(self.view.sel()[0])
+            if len(selection) > 0:
+               highlights.append(selection)
 
       results = []
       for text in highlights:
@@ -25,8 +26,8 @@ class HighlightSelection(sublime_plugin.TextCommand):
 class HighlightListener(sublime_plugin.EventListener):
    def on_modified(self, view):
       h = HighlightSelection(view)
-      h.run(None)
+      h.run(None, add=False)
 
    def on_activated(self, view):
       h = HighlightSelection(view)
-      h.run(None)
+      h.run(None, add=False)

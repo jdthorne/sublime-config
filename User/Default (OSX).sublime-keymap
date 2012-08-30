@@ -1,0 +1,42 @@
+[
+   { "keys": ["super+/"], "command": "comment" },
+   { "keys": ["super+shift+/"], "command": "toggle_comment", "args": { "block": true } },
+   { "keys": ["super+shift+e"], "command": "expand" },
+   { "keys": ["super+d"], "command": "duplicate_line" },
+   { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "replace"} },
+
+   { "keys": ["super+e"], "command": "highlight_errors" },
+   { "keys": ["super+shift+w"], "command": "close_all" },
+   { "keys": ["super+shift+n"], "command": "new_class" },
+
+   { "keys": ["alt+t"], "command": "toggle_test" },
+   { "keys": ["alt+o"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
+
+   { "keys": ["super+h"], "command": "highlight_selection" },
+   { "keys": ["super+shift+h"], "command": "highlight_selection", "args": {"clear": true} },
+
+   { "keys": ["super+alt+left"], "command": "view_navigation", "args": { "direction": "back" } },
+   { "keys": ["super+alt+right"], "command": "view_navigation", "args": { "direction": "forward" } },
+
+   {
+      "keys": ["super+l"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 0.5, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+      }
+   },
+
+   {
+      "keys": ["super+shift+l"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1]]
+      }
+   }
+]
