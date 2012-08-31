@@ -1,4 +1,11 @@
 {
+    "marker_warning_scope": "errorwarning",
 
-    "hide_output_when_empty": true
+    "hide_output_when_empty": true,
+
+    // Scope used for markers in the clang output panel
+    "marker_analyzer_output_panel_scope": "errorwarning",
+
+    // Scope used for markers by the analyzer in the file views
+    "marker_analyzer_scope": "errorwarning"
 }

@@ -17,6 +17,7 @@
 
    { "keys": ["super+alt+left"], "command": "view_navigation", "args": { "direction": "back" } },
    { "keys": ["super+alt+right"], "command": "view_navigation", "args": { "direction": "forward" } },
+   { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
    {
       "keys": ["super+l"],
@@ -38,5 +39,20 @@
          "rows": [0.0, 1.0],
          "cells": [[0, 0, 1, 1]]
       }
-   }
+   },
+
+  {
+    "command": "clang_goto_implementation",
+    "context": [{"key": "clang_supported_language"}],
+    "keys": ["alt+g"]
+  },
+  
+   { "keys": ["ctrl+c"], "command": "clipboard_copy",
+      "context": [{"key": "clipboardcopy_fake", "operator":"equal", "operand":true}]
+   },
+   { "keys": ["ctrl+x"], "command": "clipboard_copy",
+      "context": [{"key": "clipboardcopy_fake", "operator":"equal", "operand":true}]
+   },
+   { "keys": ["ctrl+shift+v"], "command": "clipboard_display" }
+
 ]
