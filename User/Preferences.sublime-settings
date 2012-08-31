@@ -1,6 +1,6 @@
 {
 	"auto_complete": true,
-	"auto_complete_commit_on_tab": false,
+	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 50,
 	"auto_complete_selector": "source - comment",
 	"auto_complete_size_limit": 4194304,
@@ -82,13 +82,15 @@
 	"font_options":
 	[
 	],
+	"font_size": 8,
 	"gutter": true,
 	"highlight_line": false,
 	"highlight_modified_tabs": false,
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"SyncedSideBar"
 	],
 	"indent_guide_options":
 	[
