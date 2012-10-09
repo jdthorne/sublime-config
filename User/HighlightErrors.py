@@ -3,6 +3,8 @@ import re
 import os
 import time
 
+waitingFiles = []
+
 class HighlightErrors(sublime_plugin.TextCommand):
    def run(self, edit):
       self.window = self.view.window()
@@ -28,6 +30,9 @@ class HighlightErrors(sublime_plugin.TextCommand):
                continue
 
             if not file in views:
+               global waitingFiles
+               waitingFiles.append(file)
+
                views[file] = self.window.open_file(file)
                viewErrorRegions[view.file_name()] = []
                viewWarningRegions[view.file_name()] = []
@@ -44,4 +49,7 @@ class HighlightErrors(sublime_plugin.TextCommand):
 
 class HighlightUpdater(sublime_plugin.EventListener):
    def on_load(self, view):
-      view.run_command("highlight_errors")
+      file = view.file_name()
+      if file in waitingFiles:
+         waitingFiles.remove(file)
+         view.run_command("highlight_errors")

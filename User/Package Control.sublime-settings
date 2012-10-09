@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"auto_upgrade_last_run": 1349795391,
+=======
+	"auto_upgrade_last_run": 1346421372,
+>>>>>>> 1a05dc520ce3a94dda1bfa0673b0cd82d52f0534
 	"installed_packages":
 	[
 		"Clipboard History",
