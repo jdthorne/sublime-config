@@ -4,7 +4,9 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>sh</string>
+      <string>sh</string>
+      <string>Tupfile</string>
+		<string>Tuprules.tup</string>
 		<string>bash</string>
 		<string>zsh</string>
 		<string>.bashrc</string>

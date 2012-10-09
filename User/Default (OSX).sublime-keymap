@@ -1,6 +1,6 @@
 [
-   { "keys": ["super+/"], "command": "comment" },
-   { "keys": ["super+shift+/"], "command": "toggle_comment", "args": { "block": true } },
+   { "keys": ["super+shift+/"], "command": "comment" },
+   { "keys": ["super+/"], "command": "toggle_comment", "args": { "block": true } },
    { "keys": ["super+shift+e"], "command": "expand" },
    { "keys": ["super+d"], "command": "duplicate_line" },
    { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "replace"} },

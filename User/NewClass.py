@@ -2,18 +2,17 @@ import sublime, sublime_plugin
 import os
 
 headerTemplate = """\
-#ifndef $CLASS_CAPS
-#define $CLASS_CAPS
+#ifndef $CLASS_CAPS_H
+#define $CLASS_CAPS_H
 
-// Qt
-#include <QString>
+// System
 
-// Spacegame
+// Project
 
 /**
  ******************************************************************************
  *
- * \\brief            $CLASS
+ *                   $CLASS
  *
  ******************************************************************************
  */
@@ -22,7 +21,7 @@ class $CLASS
 
 public:
    $CLASS();
-   ~$CLASS();
+   virtual ~$CLASS();
 
 public:
 
@@ -37,9 +36,9 @@ private: // members
 
 bodyTemplate = """\
 
-// Qt
+// System
 
-// Spacegame
+// Project
 #include <$CLASS.h>
 
 $CLASS::$CLASS()
