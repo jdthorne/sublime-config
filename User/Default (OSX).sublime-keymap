@@ -19,6 +19,10 @@
    { "keys": ["super+alt+right"], "command": "view_navigation", "args": { "direction": "forward" } },
    { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
+   { "keys": ["super+alt+enter"], "command": "replace_all", "args": {"close_panel": true},
+       "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+   },
+
    {
       "keys": ["super+l"],
       "command": "set_layout",

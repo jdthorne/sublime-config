@@ -53,11 +53,11 @@
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
-      "*.dll",
+		"*.dll",
 		"*.BMP",
 		"*.obj",
-      "*.o",
-      "*.moc.cxx",
+		"*.o",
+		"*.moc.cxx",
 		"*.ui.h",
 		"*.a",
 		"*.lib",
@@ -82,10 +82,11 @@
 		".hg",
 		"CVS"
 	],
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 	],
-	"font_size": 8,
+	"font_size": 11.0,
 	"gutter": true,
 	"highlight_line": false,
 	"highlight_modified_tabs": false,
