@@ -1,11 +1,12 @@
 {
-	"auto_upgrade_last_run": 1351176950,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Clipboard History",
 		"Package Control",
 		"SublimeClang",
 		"SublimeCodeIntel",
-		"SyncedSideBar"
+		"SyncedSideBar",
+		"Theme - Soda"
 	]
 }
