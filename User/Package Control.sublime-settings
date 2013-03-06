@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Clipboard History",
+		"GitGutter",
 		"Package Control",
 		"SublimeClang",
 		"SublimeCodeIntel",

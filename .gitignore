@@ -3,4 +3,4 @@ SublimeClang
 *.png
 Backup
 *.cache
-
+*.last-run
