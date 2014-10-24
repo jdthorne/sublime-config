@@ -68,7 +68,7 @@
          <string>header.tab1</string>
 
          <key>match</key>
-         <string>^   .*$</string>
+         <string>^  .*$</string>
       </dict>
       <dict>
          <key>name</key>

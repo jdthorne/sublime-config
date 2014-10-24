@@ -3,8 +3,18 @@
 	"installed_packages":
 	[
 		"Clipboard History",
+		"CoffeeScript",
+		"Cucumber",
+		"ExportHtml",
+		"Fountain",
 		"GitGutter",
+		"HTML Export",
+		"LESS",
 		"Package Control",
+		"Puppet",
+		"ruby-slim.tmbundle",
+		"Sass",
+		"SideBarEnhancements",
 		"SublimeClang",
 		"SublimeCodeIntel",
 		"SyncedSideBar",

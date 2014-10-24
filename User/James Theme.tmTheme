@@ -12,7 +12,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#000000</string>
+				<string>#141414</string>
 				<key>caret</key>
 				<string>#FFFFFF</string>
 				<key>foreground</key>
@@ -746,6 +746,38 @@
 
       <dict>
          <key>name</key>
+         <string>Super Top-Level Header</string>
+         <key>scope</key>
+         <string>header.supertop</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+            <key>background</key>
+            <string>#5487CC</string>
+            <key>fontStyle</key>
+            <string>bold</string>
+         </dict>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>Super Top-Level Header</string>
+         <key>scope</key>
+         <string>header.supersub</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+            <key>background</key>
+            <string>#34547F</string>
+            <key>fontStyle</key>
+            <string>bold</string>
+         </dict>
+      </dict>
+
+      <dict>
+         <key>name</key>
          <string>Sub-Level Header</string>
          <key>scope</key>
          <string>header.top2</string>
@@ -782,6 +814,31 @@
          </dict>
       </dict>
 
+
+      <dict>
+         <key>name</key>
+         <string>Hashtag</string>
+         <key>scope</key>
+         <string>marker.hashtag</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#AAEE99</string>
+         </dict>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>Hashtag</string>
+         <key>scope</key>
+         <string>marker.hashtag2</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#85BA78</string>
+         </dict>
+      </dict>
+
       <dict>
          <key>name</key>
          <string>Story Time</string>
@@ -804,7 +861,7 @@
             <key>foreground</key>
             <string>#AAEE99</string>
          </dict>
-      </dict>
+      </dict>      
 	</array>
 	<key>uuid</key>
 	<string>343011CC-B7DF-11D9-B5C6-000D93C8BE28</string>

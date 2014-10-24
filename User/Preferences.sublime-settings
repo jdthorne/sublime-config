@@ -33,7 +33,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"color_scheme": "Packages/User/James Theme.tmTheme",
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "system",
@@ -72,7 +72,8 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		".obj"
+    ".obj",
+		"._*"
 	],
 	"find_selected_text": true,
 	"fold_buttons": true,
@@ -81,17 +82,33 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+    "node_modules",
+    ".sass-cache"
 	],
 	"font_face": "Source Code Pro",
 	"font_options":
 	[
 	],
-	"font_size": 11.0,
+	"font_size": 12.0,
 	"gutter": true,
 	"highlight_line": false,
 	"highlight_modified_tabs": false,
-	"hot_exit": true,
+	"hot_exit": false,
+	"html_panel":
+	[
+		{
+			"Automatic":
+			{
+				"browser_print": false,
+				"color_scheme": "Packages/User/James Theme.tmTheme",
+				"multi_select": true,
+				"numbers": false,
+				"style_gutter": false,
+				"wrap": 900
+			}
+		}
+	],
 	"ignored_packages":
 	[
 		"Vintage",
@@ -118,9 +135,10 @@
 	"open_files_in_new_window": true,
 	"overlay_scroll_bars": "system",
 	"preview_on_click": true,
-	"remember_open_files": true,
+	"remember_open_files": false,
 	"rulers":
 	[
+		100
 	],
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
@@ -132,8 +150,8 @@
 	"smart_indent": true,
 	"spell_check": false,
 	"tab_completion": true,
-	"tab_size": 3,
-	"theme": "Soda Light.sublime-theme",
+	"tab_size": 2,
+	"theme": "Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
@@ -141,6 +159,6 @@
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "auto",
+	"word_wrap": false,
 	"wrap_width": 0
 }

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>fileTypes</key>
+   <array>
+      <string>logbook</string>
+   </array>
+   <key>name</key>
+   <string>Logbook</string>
+   <key>patterns</key>
+   <array>
+      <dict>
+         <key>name</key>
+         <string>header.important</string>
+         <key>begin</key>
+         <string>^\*\*+.*$</string>
+         <key>end</key>
+         <string>^$</string>
+
+         <key>patterns</key>
+         <array>
+            <dict>
+               <key>match</key>
+               <string>[^\*]+</string>
+            </dict>
+         </array>
+
+      </dict>
+
+
+
+      <dict>
+         <key>name</key>
+         <string>marker.hashtag</string>
+
+         <key>match</key>
+         <string>#[a-zA-Z0-9-]+</string>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>header.supertop</string>
+         
+         <key>begin</key>
+         <string>^===* *$</string>
+         <key>end</key>
+         <string>^$</string>
+
+         <key>patterns</key>
+         <array>
+            <dict>
+               <key>match</key>
+               <string>[^=]*</string>
+            </dict>
+         </array>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>header.top2</string>
+         
+         <key>begin</key>
+         <string>^---*$</string>
+         <key>end</key>
+         <string>^$</string>
+
+         <key>patterns</key>
+         <array>
+            <dict>
+              <key>name</key>
+              <string>marker.hashtag</string>
+               <key>match</key>
+               <string>#[a-zA-Z0-9-]+</string>
+            </dict>
+            <dict>
+               <key>match</key>
+               <string>[^-]</string>
+            </dict>
+         </array>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>header.tab1</string>
+
+         <key>begin</key>
+         <string>^  </string>
+         <key>end</key>
+         <string>$</string>
+
+         <key>patterns</key>
+         <array>
+            <dict>
+              <key>name</key>
+              <string>marker.hashtag2</string>
+               <key>match</key>
+               <string>#[a-zA-Z0-9-]+</string>
+            </dict>
+
+            <dict>
+               <key>match</key>
+               <string>.</string>
+            </dict>
+         </array>      
+      </dict>
+      
+      <dict>
+         <key>name</key>
+         <string>header.supersub</string>
+
+         <key>begin</key>
+         <string>^: .*$</string>
+         <key>end</key>
+         <string>^$</string>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>marker.storytime-header</string>
+
+         <key>begin</key>
+         <string>^ *Story Time\:</string>
+         <key>end</key>
+         <string>^$</string>
+
+         <key>patterns</key>
+         <array>
+            <dict>
+               <key>match</key>
+               <string>Story Time:.*</string>
+
+               <key>name</key>
+               <string>marker.storytime-header</string>               
+            </dict>
+
+            <dict>
+               <key>match</key>
+               <string>.*</string>
+
+               <key>name</key>
+               <string>marker.storytime</string>               
+            </dict>
+         </array>
+      </dict>
+
+   </array>
+
+   <key>scopeName</key>
+   <string>source.lecturenotes</string>
+</dict>
+</plist>
+

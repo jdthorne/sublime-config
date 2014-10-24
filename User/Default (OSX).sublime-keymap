@@ -8,6 +8,7 @@
    { "keys": ["super+e"], "command": "highlight_errors" },
    { "keys": ["super+shift+w"], "command": "close_all" },
    { "keys": ["super+shift+n"], "command": "new_class" },
+   { "keys": ["super+shift+g"], "command": "logbook" },
 
    { "keys": ["alt+t"], "command": "toggle_test" },
    { "keys": ["alt+o"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
@@ -18,6 +19,7 @@
    { "keys": ["super+alt+left"], "command": "view_navigation", "args": { "direction": "back" } },
    { "keys": ["super+alt+right"], "command": "view_navigation", "args": { "direction": "forward" } },
    { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+   { "keys": ["super+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
    { "keys": ["super+alt+enter"], "command": "replace_all", "args": {"close_panel": true},
        "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]

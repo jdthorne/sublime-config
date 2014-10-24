@@ -43,17 +43,17 @@
     "spell_check": false,
 
     // The number of spaces a tab is considered equal to
-    "tab_size": 3,
+    "tab_size": 4,
 
     // Set to true to insert spaces when tab is pressed
-    "translate_tabs_to_spaces": true,
+    "translate_tabs_to_spaces": false,
 
     // If translate_tabs_to_spaces is true, use_tab_stops will make tab and
     // backspace insert/delete up to the next tabstop
     "use_tab_stops": true,
 
     // Set to false to disable detection of tabs vs. spaces on load
-    "detect_indentation": false,
+    "detect_indentation": true,
 
     // Calculates indentation automatically when pressing enter
     "auto_indent": true,
@@ -87,7 +87,7 @@
     "draw_centered": false,
 
     // Controls auto pairing of quotes, brackets etc
-    "auto_match_enabled": false,
+    "auto_match_enabled": true,
 
     // Word list to use for spell checking
     "dictionary": "Packages/Language - English/en_US.dic",
@@ -228,6 +228,10 @@
     // inserting tabs.
     "shift_tab_unindent": false,
 
+    // If true, the copy and cut commands will operate on the current line
+    // when the selection is empty, rather than doing nothing.
+    "copy_with_empty_selection": true,
+
     // If true, the selected text will be copied into the find panel when it's
     // shown.
     // On OS X, this value is overridden in the platform specific settings, so
@@ -258,11 +262,18 @@
     "show_tab_close_buttons": true,
 
     // Show folders in the side bar in bold
-    "bold_folder_labels": true,
+    "bold_folder_labels": false,
 
     // OS X 10.7 only: Set to true to disable Lion style full screen support.
     // Sublime Text must be restarted for this to take effect.
     "use_simple_full_screen": false,
+
+    // OS X only. Valid values are true, false, and "auto". Auto will enable
+    // the setting when running on a screen 2880 pixels or wider (i.e., a
+    // Retina display). When this setting is enabled, OpenGL is used to
+    // accelerate drawing. Sublime Text must be restarted for changes to take
+    // effect.
+    "gpu_window_buffer": "auto",
 
     // Valid values are "system", "enabled" and "disabled"
     "overlay_scroll_bars": "system",

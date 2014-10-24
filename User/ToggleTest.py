@@ -15,5 +15,3 @@ class ToggleTest(sublime_plugin.TextCommand):
          targetFile = os.path.abspath( directory + "/test/" + file.split(".")[0] + "/Test" + file )
 
       self.view.window().open_file(targetFile)
-
-

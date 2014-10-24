@@ -20,8 +20,8 @@ class $CLASS
 {
 
 public:
-   $CLASS();
-   virtual ~$CLASS();
+  $CLASS();
+  virtual ~$CLASS();
 
 public:
 
@@ -37,6 +37,7 @@ private: // members
 bodyTemplate = """\
 
 // System
+#include <cstdio>
 
 // Project
 #include <$CLASS.h>
